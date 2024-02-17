@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the Cosmos</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">   
+        <header class="header">
+            <nav class="navbar">
+              <a href="Index.html" class="nav-logo"><img src="images\Logo 1.png"></a>
+              <a class="nav" href="#contactForm">Contact Us</a>
+              <a class="nav" href="#Blog">Blog</a>
+              <a class="nav" href="Index.html">Home</a>
+              <div class="dot"></div>
+            </nav>
+          </header>    
+        <div class="slide-show">
+            <div class="image-pane">
+                <div id="slide-images">
+                    <div class="image-card" id="img1">
+                        <img src="images/1.jpg" alt="Image 01">
+                    </div>
+                    <div class="image-card" id="img2">
+                        <img src="images/2.jpg" alt="Image 02">
+                    </div>
+                    <div class="image-card" id="img3">
+                        <img src="images/3.jpg" alt="Image 03">
+                    </div>
+                    <div class="image-card" id="img4">
+                        <img src="images/4.jpg" alt="Image 04">
+                    </div>
+                    <div class="image-card" id="img5">
+                        <img src="images/5.jpg" alt="Image 05">
+                    </div>
+                </div>
+            </div>
+        </div> <br>
+        
+        <div class="video-pane1" id="Blog">
+
+            <div class="video-frame">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+            <div class="blackhole">
+                Black holes, enigmatic cosmic entities, are regions in space with gravity so intense that nothing, not even light, can escape 
+                their powerful grasp. Formed from the remnants of massive stars that collapse under their own gravity, black holes possess 
+                unimaginable densities and warp the fabric of spacetime. They play a vital role in astrophysics, influencing the evolution of 
+                galaxies and serving as cosmic laboratories for testing fundamental physics. Despite their mysterious nature, the study of 
+                black holes continues to shed light on the awe-inspiring mysteries of the universe.<a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-a-black-hole-k4.html">
+                    ...see more.</a>         
+            </div>
+        </div>
+        <div class="video-pane2">
+
+            <div class="Astronaunt">
+                Astronauts, the intrepid pioneers of space exploration, are highly trained individuals who venture beyond Earth's atmosphere 
+                to explore the cosmos. Equipped with technical expertise, physical endurance, and a profound sense of curiosity, astronauts 
+                undergo rigorous training to prepare for the challenges of living and working in the weightlessness of space. They conduct 
+                vital scientific research, perform extravehicular activities (spacewalks), and navigate complex missions aboard spacecraft 
+                and the International Space Station. These modern-day explorers inspire humanity with their daring missions, expanding our 
+                knowledge of the universe and paving the way for future interplanetary journeys.<a href="https://www.nasa.gov/astronauts">
+                    ...see more.</a>
+            </div>
+
+            <div class="scaling-image">
+                <p class="sub-para">
+                    Click to Expand and Shrink!
+                </p>
+                <img src="images/scale.jpg" id="scaleImage" alt="scaling image">               
+            </div>
+        </div>
+        <div class="contactUs-pane video-pane">
+            <p id="contactUs" style="font-size: 25px; font-weight: bold;">Contact Us</p><br>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <p id="name-text">Name </p><input type="text" name="name" id="name">
+                <p id="tel-text">Telephone </p><input type="text" name="telephone" id="telephone">
+                <p id="email-text">Email </p><input type="text" name="email" id="email"><br><br>
+                <button type="submit" id="btnSubmit">Submit</button>
+                <button type="reset" id="btnCancel">Cancel</button>
+            </form>
+        </div>
+    
+        <div id="rocket-container">
+            <img src="images/Rocket.gif" alt="rocket" id="rocket" onclick="Move()">
+        </div>
+    <footer class="footer">
+      <p>IM/2020/098 - Pravil Wijesinghe<br>  &copy;  <a href="Index.html">2023 Exploring the Cosmos. All rights reserved.</a></p>
+    </footer>
+
+        <script src="Script.js"></script>
+    </div>
+</body>
+
+</html>
